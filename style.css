@@ -33,3 +33,4 @@
 .commercial-assurance{font-size:14px;line-height:1.8;color:#bdcdb2;max-width:820px;margin-top:23px;padding:18px 21px;border:1px solid #3a502a;border-radius:8px;background:#192215}.price-card p.commercial-assurance{font-size:12px;color:#bdcdb2;margin-top:22px}
 
 .process ol{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.process ol{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.process ol{grid-template-columns:1fr}}
+.process li:nth-child(n+5) .step-image{object-position:center top}
