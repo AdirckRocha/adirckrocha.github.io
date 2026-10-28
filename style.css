@@ -23,3 +23,5 @@
 .price-card p.price-from{color:#c1d3ab;font-size:14px;margin-top:20px;margin-bottom:-7px}
 
 .process li{overflow:hidden;padding-top:0;display:flex;flex-direction:column}.process li:before{order:1;margin-top:20px}.process li>b{order:2}.process li>p{order:3}.step-image{order:0;display:block;width:calc(100% + 50px);max-width:none;height:160px;object-fit:cover;margin:0 -25px 0;flex-shrink:0;border-bottom:1px solid #344039}@media(max-width:900px){.step-image{height:190px}}@media(max-width:620px){.step-image{width:calc(100% + 44px);margin-inline:-22px;height:210px}}
+
+.social-links{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.social-links a{font-size:12px;color:#bcf452}.social-links a:hover{text-decoration:underline}.about-story .social-links{margin-top:24px}footer{flex-wrap:wrap}footer .social-links{margin-left:auto}footer>a:last-child{margin-left:0}@media(max-width:620px){footer .social-links{margin-left:0;width:100%;order:4}footer>a:last-child{margin-left:auto}}
