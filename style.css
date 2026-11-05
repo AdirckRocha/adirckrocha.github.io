@@ -34,3 +34,29 @@
 
 .process ol{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.process ol{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.process ol{grid-template-columns:1fr}}
 .process li:nth-child(n+5) .step-image{object-position:center top}
+
+/* Portfolio: repeat .published-project inside .published-projects for each new project. */
+.project-section-heading{display:flex;justify-content:space-between;align-items:end;gap:36px;margin-bottom:32px}
+.project-section-heading>p{max-width:350px;color:var(--muted);font-size:15px}
+.published-projects{display:grid;gap:28px}
+.published-project{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);border:1px solid var(--line);border-radius:16px;background:#11171d;overflow:hidden}
+.published-project-preview{margin:0;min-width:0;background:#0b1015;border-right:1px solid var(--line)}
+.project-browser-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;background:#182028;color:#aebac4;font-size:11px}
+.project-browser-bar>span:first-child{color:#647780;letter-spacing:2px}
+.project-live{color:#bcf452;font-size:10px;letter-spacing:.12em;white-space:nowrap}
+.published-project-preview>a{display:block;overflow:hidden}
+.published-project-preview img{display:block;width:100%;height:auto;aspect-ratio:1.3;object-fit:cover;object-position:top}
+.published-project-preview figcaption{padding:13px 18px;color:#aebac4;font-size:11px}
+.published-project-body{padding:36px;align-self:center;min-width:0}
+.published-project-body .eyebrow{font-size:10px;margin-bottom:15px}
+.published-project-body h3{font-size:clamp(27px,3vw,38px);line-height:1.15;letter-spacing:-.04em;color:#f0f3f5}
+.published-project-body h3>span{display:block;font-size:16px;letter-spacing:.12em;color:#a5be8a;margin-top:9px}
+.published-project-body>p:not(.eyebrow){margin-top:20px;color:#bdc8d0;font-size:15px}
+.project-features{padding-left:18px;margin:19px 0;color:#bdc8d0;font-size:14px;line-height:1.65}
+.project-features li+li{margin-top:9px}
+.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin:22px 0}
+.project-tags>span{padding:5px 9px;border:1px solid #354536;border-radius:5px;color:#bed3a9;background:#18211b;font-size:10px}
+.project-section-footer{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:25px}
+.project-section-footer p{font-size:13px;color:var(--muted);margin-right:auto}
+@media(max-width:800px){.project-section-heading{display:block}.project-section-heading>p{margin-top:20px;max-width:520px}.published-project{grid-template-columns:1fr}.published-project-preview{border-right:0;border-bottom:1px solid var(--line)}.published-project-preview img{aspect-ratio:1.6}.published-project-body{padding:27px}.project-section-footer{align-items:start;flex-direction:column}}
+@media(max-width:420px){.project-browser-bar{padding:12px;font-size:10px;gap:8px}.project-browser-bar>span:first-child{display:none}.published-project-body{padding:22px}.published-project-body .button{width:100%;padding:14px}}
